@@ -21,6 +21,15 @@ Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills spe
 
 ## Install
 
+**Claude Code plugin (one command, gets updates):**
+
+```bash
+claude plugin marketplace add agentkitco/agentkit-dev-skills
+claude plugin install agentkit-dev-skills@agentkit-dev-skills
+```
+
+Inside a session you can run `/plugin marketplace add agentkitco/agentkit-dev-skills` instead and install from the `/plugin` panel. Plugin skills get the plugin name as a prefix, so you invoke them as `/agentkit-dev-skills:review-my-diff`. The repository is its own marketplace (`.claude-plugin/marketplace.json`), checked with `claude plugin validate` and a local install, which loads all 12 skills.
+
 **Claude Code** (project skills, shared with your team through git):
 
 ```bash
