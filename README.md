@@ -1,8 +1,8 @@
-# AgentKit Dev Skills: 12 Agent Skills for coding agents
+# AgentKit Dev Skills: 13 Agent Skills for coding agents
 
-Twelve ready-to-use `SKILL.md` skills for everyday developer work: review your own diff, debug from a reproduction, write PR descriptions, upgrade dependencies, refactor safely, hand a session off, and audit your own AGENTS.md or CLAUDE.md. MIT licensed. Free.
+Thirteen ready-to-use `SKILL.md` skills for everyday developer work: review your own diff, debug from a reproduction, write PR descriptions, upgrade dependencies, refactor safely, hand a session off, write a Claude Code subagent, and audit your own AGENTS.md or CLAUDE.md. MIT licensed. Free.
 
-Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills specification](https://agentskills.io/specification) (only spec fields: `name`, `description`, `license`, `metadata`), so the same files load in Claude Code and in other tools that read the format. All 12 pass `agentskills validate` (the `skills-ref` reference validator, version 0.1.x).
+Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills specification](https://agentskills.io/specification) (only spec fields: `name`, `description`, `license`, `metadata`), so the same files load in Claude Code and in other tools that read the format. All 13 pass `agentskills validate` (the `skills-ref` reference validator).
 
 | Skill | Use it when |
 |---|---|
@@ -18,6 +18,13 @@ Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills spe
 | `brag-doc-from-git` | Review season: collect merged PRs into a brag document, with visible gaps for results. |
 | `session-handoff` | A long session is ending and a fresh one must continue. |
 | `prove-it-ran` | Before anyone says "done", verify the checks ran and covered the change. |
+| `write-subagent` | You want a Claude Code subagent (`.claude/agents/<name>.md`) for one repeatable job, with minimal tools and a description that actually triggers. |
+
+## What's new
+
+- 2026-10-22, v1.2: added `write-subagent` (drafts a Claude Code subagent file with a trigger-ready description and the smallest tool list, then checks it loads). Checked against the [subagents docs](https://code.claude.com/docs/en/sub-agents) that day.
+- 2026-10-18, v1.1: the repo is now a Claude Code plugin marketplace (one-command install below).
+- 2026-10-17, v1.0: first 12 skills.
 
 ## Install
 
@@ -28,12 +35,12 @@ claude plugin marketplace add agentkitco/agentkit-dev-skills
 claude plugin install agentkit-dev-skills@agentkit-dev-skills
 ```
 
-Inside a session you can run `/plugin marketplace add agentkitco/agentkit-dev-skills` instead and install from the `/plugin` panel. Plugin skills get the plugin name as a prefix, so you invoke them as `/agentkit-dev-skills:review-my-diff`. The repository is its own marketplace (`.claude-plugin/marketplace.json`), checked with `claude plugin validate` and a local install, which loads all 12 skills.
+Inside a session you can run `/plugin marketplace add agentkitco/agentkit-dev-skills` instead and install from the `/plugin` panel. Plugin skills get the plugin name as a prefix, so you invoke them as `/agentkit-dev-skills:review-my-diff`. The repository is its own marketplace (`.claude-plugin/marketplace.json`), checked with `claude plugin validate` and a local install, which loads every skill in `skills/`.
 
 **Claude Code** (project skills, shared with your team through git):
 
 ```bash
-./install.sh --claude            # copies all 12 into ./.claude/skills/
+./install.sh --claude            # copies all of them into ./.claude/skills/
 ./install.sh --claude --global   # or into ~/.claude/skills/
 ./install.sh --claude review-my-diff prove-it-ran   # or pick some
 ```
@@ -70,6 +77,11 @@ Edit the `description` first. It decides when an agent loads a skill, so name yo
 
 - Free AGENTS.md / CLAUDE.md / Cursor / Copilot generator: https://agentkitco.com/tools/agents-md-generator/
 - Guides on instruction files and agent settings: https://agentkitco.com/blog/
+- Free guides with copy-paste files: [subagent examples](https://agentkitco.com/blog/claude-code-subagents-examples/), [custom slash command examples](https://agentkitco.com/blog/claude-code-slash-commands-examples/), [hooks examples](https://agentkitco.com/blog/claude-code-hooks-examples/)
+
+### Paid packs
+
+- Claude Code Subagent Pack ($29, 30-day refund): 18 tested subagents for review, testing, debugging, code changes, research and docs, with an installer that skips files you already have: https://agentkitco.com/products/claude-code-subagent-pack/
 - The AI Coding Agent Config Kit (paid, $14): AGENTS.md templates for 12 stacks, scoped rules and prompts: https://agentkitco.com/products/agent-config-kit/
 
 License: MIT (see `LICENSE`).
