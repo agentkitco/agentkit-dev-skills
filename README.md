@@ -22,6 +22,7 @@ Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills spe
 
 ## What's new
 
+- 2026-10-23, v1.2.1: added `.claude-plugin/plugin.json` (plugin manifest); `write-subagent` now ends every description with a "Do not use for ..." line (thanks to @tuotuo@mastodon.social for the tip).
 - 2026-10-22, v1.2: added `write-subagent` (drafts a Claude Code subagent file with a trigger-ready description and the smallest tool list, then checks it loads). Checked against the [subagents docs](https://code.claude.com/docs/en/sub-agents) that day.
 - 2026-10-18, v1.1: the repo is now a Claude Code plugin marketplace (one-command install below).
 - 2026-10-17, v1.0: first 12 skills.
