@@ -1,6 +1,6 @@
 ---
 name: write-subagent
-description: Draft a Claude Code subagent file (.claude/agents/<name>.md) for one repeatable job, with a trigger-ready description, the smallest tool list and a fitting model, then check it loads. Use when asked to create, fix or tune a subagent, or when a subagent never gets used.
+description: Draft a Claude Code subagent file in .claude/agents/ for one repeatable job, with a trigger-ready description, minimal tools and a fitting model. Use to create, fix or tune a subagent.
 license: MIT
 metadata:
   author: AgentKit Co

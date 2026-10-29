@@ -1,6 +1,6 @@
 ---
 name: agents-md-audit
-description: Audit an AGENTS.md, CLAUDE.md, Cursor rule or Copilot instructions file for stale commands, broken paths, vague rules, secrets and contradictions. Use when asked to review, trim or check agent instructions.
+description: Audit an AGENTS.md, CLAUDE.md, Cursor rule or Copilot instructions file for stale commands, broken paths, vague rules, secrets and contradictions. Use to review or trim agent instructions.
 license: MIT
 metadata:
   author: AgentKit Co

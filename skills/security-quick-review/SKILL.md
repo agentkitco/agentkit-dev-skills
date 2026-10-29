@@ -1,6 +1,6 @@
 ---
 name: security-quick-review
-description: Quick security pass over a change or module covering secrets, injection, auth and access checks, unsafe deserialization, dependency and config risks, with evidence. Use before merging code that handles input, auth, files or money.
+description: Quick security pass over a change covering secrets, injection, auth and access checks, unsafe deserialization, dependency and config risks, with evidence. Use before merging input or auth code.
 license: MIT
 metadata:
   author: AgentKit Co

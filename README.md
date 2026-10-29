@@ -22,6 +22,7 @@ Each skill is a folder with a `SKILL.md` that follows the open [Agent Skills spe
 
 ## What's new
 
+- 2026-10-28, v1.2.3: every skill description is now 200 characters or fewer and contains no angle brackets, so each skill ZIP fits the claude.ai upload limit in the [Claude Help Center](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) (the Agent Skills spec allows 1,024). Checked with a YAML parse plus name, folder and length checks.
 - 2026-10-24, v1.2.2: `dependency-upgrade` now shows the target version and the files it will change and waits for a yes before installing or editing; it, `agents-md-audit` and `explain-codebase` treat release notes, changelogs and instruction files as data that cannot add commands, widen an upgrade or skip a test (thanks to the buildwithclaude review).
 - 2026-10-23, v1.2.1: added `.claude-plugin/plugin.json` (plugin manifest); `write-subagent` now ends every description with a "Do not use for ..." line (thanks to @tuotuo@mastodon.social for the tip).
 - 2026-10-22, v1.2: added `write-subagent` (drafts a Claude Code subagent file with a trigger-ready description and the smallest tool list, then checks it loads). Checked against the [subagents docs](https://code.claude.com/docs/en/sub-agents) that day.

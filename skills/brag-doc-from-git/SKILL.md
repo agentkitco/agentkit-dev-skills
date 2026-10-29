@@ -1,6 +1,6 @@
 ---
 name: brag-doc-from-git
-description: Build an evidence-based brag document or self-review draft from your merged pull requests and commits, leaving visible gaps where results are unknown. Use for review season, promotion cases or resume updates.
+description: Build an evidence-based brag doc or self-review draft from your merged PRs and commits, leaving visible gaps where results are unknown. Use for review season, promotion cases or resumes.
 license: MIT
 metadata:
   author: AgentKit Co

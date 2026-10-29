@@ -1,6 +1,6 @@
 ---
 name: explain-codebase
-description: Build an onboarding map of an unfamiliar repository covering purpose, entry points, how to run it, main modules, data flow and risky areas, with file references. Use when asked to explain, map or onboard onto a codebase.
+description: Map an unfamiliar repo covering purpose, entry points, how to run it, main modules, data flow and risky areas, with file references. Use when asked to explain or onboard onto a codebase.
 license: MIT
 metadata:
   author: AgentKit Co

@@ -1,6 +1,6 @@
 ---
 name: review-my-diff
-description: Self-review your uncommitted or branch changes before opening a PR, with findings ranked by severity and backed by file and line evidence. Use when asked to review my changes, check my diff or get ready for review.
+description: Self-review uncommitted or branch changes before a PR, with findings ranked by severity and backed by file and line evidence. Use when asked to review my changes or check my diff.
 license: MIT
 metadata:
   author: AgentKit Co

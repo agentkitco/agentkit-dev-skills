@@ -1,6 +1,6 @@
 ---
 name: dependency-upgrade
-description: Upgrade one dependency at a time by reading its changelog, planning for breaking changes, updating code and proving the project still builds and passes. Use when asked to bump, update or migrate a package or framework.
+description: Upgrade one dependency at a time by reading its changelog, planning for breaking changes, updating code and proving it still builds and passes. Use to bump, update or migrate a package.
 license: MIT
 metadata:
   author: AgentKit Co

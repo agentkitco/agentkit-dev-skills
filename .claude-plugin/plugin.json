@@ -1,7 +1,7 @@
 {
   "name": "agentkit-dev-skills",
   "displayName": "AgentKit Dev Skills",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "13 free, MIT-licensed SKILL.md skills for everyday developer work in Claude Code: review-my-diff, repro-first-debugging, pr-description, safe-refactor, dependency-upgrade, explain-codebase, security-quick-review, prove-it-ran, session-handoff, brag-doc-from-git, write-agents-md, agents-md-audit, write-subagent.",
   "author": { "name": "AgentKit Co", "url": "https://agentkitco.com" },
   "homepage": "https://agentkitco.com/skills/",
