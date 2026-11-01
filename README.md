@@ -81,6 +81,7 @@ Edit the `description` first. It decides when an agent loads a skill, so name yo
 - Free AGENTS.md / CLAUDE.md / Cursor / Copilot generator: https://agentkitco.com/tools/agents-md-generator/
 - Guides on instruction files and agent settings: https://agentkitco.com/blog/
 - Free guides with copy-paste files: [subagent examples](https://agentkitco.com/blog/claude-code-subagents-examples/), [custom slash command examples](https://agentkitco.com/blog/claude-code-slash-commands-examples/), [hooks examples](https://agentkitco.com/blog/claude-code-hooks-examples/)
+- Write or package your own: [SKILL.md explained](https://agentkitco.com/blog/agent-skills-skill-md-explained/), [how to create a Claude Code plugin](https://agentkitco.com/blog/how-to-create-a-claude-code-plugin/), [.mcp.json examples](https://agentkitco.com/blog/claude-code-mcp-json-examples/), and [CLAUDE.md not working? fixes](https://agentkitco.com/blog/claude-md-not-working/)
 
 ### Paid packs
 
