@@ -60,7 +60,7 @@ Some tools use their own folder instead (for example `.windsurf/skills/` or `.ki
 
 **claude.ai upload:** run `python3 build_dist.py` to make one ZIP per skill in `dist/` (or take them from the Releases page). In Claude, open Settings, then Capabilities, then Skills, and upload a ZIP. Skills that run a script (`agents-md-audit`) need an environment where code can run.
 
-**With the skills CLI:** if you publish this folder as a public Git repository, `npx skills add <owner>/<repo>` can install from it (`npx skills add <owner>/<repo> --list` shows what it finds).
+**With the skills CLI:** `npx skills add agentkitco/agentkit-dev-skills` installs from this repo for Claude Code, Codex, Cursor and other agents. Add `--list` to see all 13 skills first, or `--skill review-my-diff` to pick one.
 
 Invoke a skill by name (`/review-my-diff` in Claude Code) or just ask for the task; tools that load skills automatically match your request to each skill's `description`.
 
