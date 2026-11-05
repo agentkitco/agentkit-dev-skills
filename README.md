@@ -88,5 +88,6 @@ Edit the `description` first. It decides when an agent loads a skill, so name yo
 
 - Claude Code Subagent Pack ($29, 30-day refund): 18 tested subagents for review, testing, debugging, code changes, research and docs, with an installer that skips files you already have: https://agentkitco.com/products/claude-code-subagent-pack/
 - The AI Coding Agent Config Kit (paid, $14): AGENTS.md templates for 12 stacks, scoped rules and prompts: https://agentkitco.com/products/agent-config-kit/
+- AI PR Review Kit ($17): blockers-first checklists for AI-written pull requests, six paste-ready PR comments, 12 review prompts and a read-only reviewer agent for Claude Code and Cursor. Pairs with `review-my-diff`: https://agentkitco.com/products/ai-pr-review-kit/
 
 License: MIT (see `LICENSE`).
